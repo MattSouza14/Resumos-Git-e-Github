@@ -60,6 +60,16 @@ O comando git stash é usado para armazenar temporariamente as mudanças no dire
 Git remote ->
 
 
+- .gitignore : Um arquivo .gitignore é usado no Git para especificar arquivos intencionalmente não rastreados que o Git deve ignorar. Esses arquivos podem ser arquivos específicos, tipos de arquivo, diretórios ou até padrões que correspondam a determinados nomes de arquivos ou extensões.
+
+
+
+
+
+
+
+
+
 
 
 
