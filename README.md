@@ -37,8 +37,8 @@ O comando "git commit" é utilizado no Git para registrar as alterações feitas
 No Git, uma branch é uma linha de desenvolvimento independente. Ela permite que você trabalhe em funcionalidades específicas do projeto sem afetar o código principal (normalmente chamado de branch "master" ou "main").
 
 #### Git branch: Lista todas as branches locais.
-#### Git branch <Nome> :  Cria uma nova branch.
-#### Git checkout <branch>: Muda para uma branch específica.
+#### Git branch Nome+da+Branch :  Cria uma nova branch.
+#### Git checkout Nome+da+Branch: Muda para uma branch específica.
 #### Git merge <branch>: Mescla as alterações de uma branch para a branch atual.
 
 - Atualiza o repositório local com as alterações do repositório remoto.
