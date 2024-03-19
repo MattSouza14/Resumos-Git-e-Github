@@ -8,59 +8,33 @@ Repositorio para armazenar resumos sobre o Git e Github
 
 ## 📚 Resumos
 - Iniciando um repositório local.
-Git init -> 
+git commit
+git commit -m "Mensagem do commit"
+O commit é um comando importantíssimo. Ele leva as mudanças de um ambiente local para o repositório no git, permitindo ainda a inserção de uma mensagem descritiva. Assim, a cada mudança ou finalização de uma tarefa, a pessoa desenvolvedora pode submeter seus feitos e deixar claro para as outras pessoas o que ela fez. 
 
-O comando "git init" é utilizado para iniciar um repositório Git em um diretório local. Quando executado, ele cria um novo repositório Git vazio no diretório especificado. Esse comando é geralmente o primeiro passo ao começar um novo projeto ou ao adicionar controle de versão a um projeto existente.
+git add
+Um comando muito similar ao “commit” e que trabalha com ele é o “add”. Com essa palavra-chave, nós preparamos arquivos para o próximo “commit”, ou seja, para subir para o repositório na web. É possível adicionar um único arquivo ou todos os arquivos modificados de uma única vez.
 
-- Vinculando o repositório local ao remoto.
-Git remote add origin "link do repositório" ->
+Para um único arquivo, use “git add nome_do_arquivo”. 
+Para preparar todos os arquivos para atualização (incluindo as exclusões), “git add -A”. 
+Para preparar somente as adições, use “git add .”
 
-O comando "git remote add origin" é usado para associar um repositório remoto ao repositório local em um projeto Git. "origin" é um apelido convencional comumente usado para se referir ao repositório remoto principal. Este comando estabelece uma conexão entre o repositório local e o repositório remoto, permitindo que você envie e receba alterações entre eles.
+git init
+O init é o primeiro dos comandos git que se usa para começar um repositório. Isto é, o que ele faz é transformar uma pasta com códigos no seu HD em uma pasta monitorada pelo git, que será carregada para a plataforma e estará visível para outras pessoas. Ou então cria um repositório novo, do zero. Exemplo: “git init”
 
-- Clonando um repositório existente.
-Git clone "link do repositório" -> 
+git clone
+git clone "link do repositorio"
+Para começar, muitas pessoas optam por uma alternativa ao init: o git clone. A partir dele, você clona um código de um repositório para a sua máquina para então começar a trabalhar nele. Pode ser um projeto de uma pessoa da sua empresa, um projeto de colegas da faculdade ou até mesmo uma aplicação open-source para a qual você julgou interessante colaborar.
 
-O comando "git clone" é utilizado para criar uma cópia local de um repositório Git existente. Ao executar "git clone", você especifica a URL do repositório remoto que deseja clonar. O Git então faz uma cópia completa do histórico de versões, dos arquivos e do ramo principal do repositório remoto para o seu diretório local.
+git status
+Para saber algumas informações sobre a ramificação na qual você está trabalhando agora, use o “status”. Esse comando esclarece quais arquivos foram alterados e faz uma comparação com relação à ramificação principal. 
 
-- Verificando o status de alterações.
-Git status -> 
+git branch
+Para trabalhar em equipe, você pode criar diferentes branches, e o git administra todas elas em paralelo para evitar problemas de versão. Então, posteriormente, com um comando que veremos, é possível unificar as ramificações.
 
-O comando "git status" é usado para exibir o estado atual do seu repositório Git local. Ao executar "git status", você recebe informações sobre arquivos que foram modificados, adicionados ou removidos no seu diretório de trabalho. O comando também informa sobre alterações que estão prontas para serem confirmadas (staged) e se há diferenças entre o seu branch local e o branch remoto.
-
--  Registrar as alterações feitas.
-Git commit -m "MENSAGEM" ->
-
-O comando "git commit" é utilizado no Git para registrar as alterações feitas nos arquivos que foram previamente adicionados ao índice (staged). Ele cria um novo commit no repositório com as alterações realizadas desde o último commit.
--m: É uma opção para adicionar uma mensagem de commit diretamente na linha de comando.
-
-- Branch:
-No Git, uma branch é uma linha de desenvolvimento independente. Ela permite que você trabalhe em funcionalidades específicas do projeto sem afetar o código principal (normalmente chamado de branch "master" ou "main").
-
-#### Git branch: Lista todas as branches locais.
-#### Git branch Nome+da+Branch :  Cria uma nova branch.
-#### Git checkout Nome+da+Branch: Muda para uma branch específica.
-#### Git merge <branch>: Mescla as alterações de uma branch para a branch atual.
-
-- Atualiza o repositório local com as alterações do repositório remoto.
-Git pull -> 
-
-O comando git pull é usado para buscar e integrar as alterações de um repositório remoto para o seu repositório local.
-
-- Enviar as alterações locais para o repositório remoto.
-Git push ->
-
-O comando git push é usado para enviar as alterações locais do seu repositório Git para um repositório remoto. Ele é fundamental para colaboração e compartilhamento de código entre desenvolvedores.
-
--  Armazena alterações temporariamente
-Git stash ->
-
-O comando git stash é usado para armazenar temporariamente as mudanças no diretório de trabalho que não estão prontas para serem commitadas. Isso é útil quando você precisa mudar de branch ou aplicar outras operações no repositório, mas não deseja commitar suas alterações no momento.
-
-- Gerencia repositórios remotos.
-Git remote ->
+O comando “git branch” cria novas branches. Mas também pode funcionar como uma forma de verificar as ramificações já existentes. 
 
 
-- .gitignore : Um arquivo .gitignore é usado no Git para especificar arquivos intencionalmente não rastreados que o Git deve ignorar. Esses arquivos podem ser arquivos específicos, tipos de arquivo, diretórios ou até padrões que correspondam a determinados nomes de arquivos ou extensões.
 
 
 
